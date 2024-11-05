@@ -1,0 +1,94 @@
+.site-before-footer{
+    
+    .col__wrap{
+        padding: 80px 150px;
+        display: flex;
+        background: #FFF;
+        max-width: 1204px;
+        margin: 177px auto 157px;
+        align-items: center;
+
+        @include max-xl{
+            padding: 60px 80px;
+            max-width: 920px;
+        }
+
+        @include max-lg{
+            margin: 120px auto;
+            max-width: 250px;
+            padding: 40px 20px 50px;
+            flex-direction: column;
+        }
+
+        hr{
+            height: 105px;
+            width: 2px;
+            background: #000;
+            opacity: 1;
+            margin: 0 85px 0 55px;
+            @include max-xl{
+                margin: 0 50px 0 40px;
+            }
+            @include max-lg{
+                display: none;
+            }
+        }
+
+        h2{
+            margin: 0;
+            line-height: 1;
+            @include max-lg{
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .buttons{
+            display: flex;
+            gap: 0 22px;
+
+            @include max-lg{
+                flex-direction: column;
+                gap: 20px;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .btn{
+                min-width: 242px;
+                @include max-xl{
+                    padding: 22px 21px;
+                    min-width: 180px;
+                    font-size: 14px;
+                }
+                @include max-md{
+                    font-size: 10px;
+                    height: 52px;
+                    max-width: 100%;
+                    min-width: initial;
+                    width: auto;
+                    line-height: 1;
+                }
+            }
+
+            .btn--wrap{
+                &:last-of-type{
+                    @include min-md{
+                        display: none;
+                    }
+                }
+                &:nth-child(2){
+                    @include max-md{
+                        display: none;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+}

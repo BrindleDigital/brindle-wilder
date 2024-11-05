@@ -1,0 +1,110 @@
+/*
+=========================================
+RESPONSIVE BREAKPOINTS (BOOTSTRAP CSS BREAKPOINTS)
+=========================================
+*/
+$max-xs: 399px;                 $min-xs: 400px;
+$max-sm: 575px;                 $min-sm: 576px;
+$max-md: 768px;                 $min-md: 769px;
+$max-lg: 991px;                 $min-lg: 992px;
+$max-xl: 1199px;                $min-xl: 1200px;
+$max-xxl: 1399px;               $min-xxl: 1400px;
+$max-hg: 1919px;                $min-hg: 1920px;
+
+
+/*
+=========================================
+RESPONSIVE BREAKPOINTS (BULMA CSS BREAKPOINTS)
+=========================================
+*/
+// $max-xs: 399px;                 $min-xs: 400px;
+// $max-sm: 575px;                 $min-sm: 576px;
+// $max-md: 768px;                 $min-md: 769px;
+// $max-lg: 1023px;                 $min-lg: 1024px;
+// $max-xl: 1215px;                $min-xl: 1216px;
+// $max-xxl: 1407px;               $min-xxl: 1408px;
+// $max-hg: 1919px;                $min-hg: 1920px;
+
+
+/*
+=========================================
+MAX RESOLUTION RESPONSIVE MIXINS
+=========================================
+*/
+@mixin max-xs(){
+    @media only screen and (max-width: $max-xs){
+        @content;
+    }   
+};
+@mixin max-sm(){
+    @media only screen and (max-width: $max-sm){
+        @content;
+    }   
+};
+@mixin max-md(){
+    @media only screen and (max-width: $max-md){
+        @content;
+    }
+};  
+@mixin max-lg(){
+    @media only screen and (max-width: $max-lg){
+        @content;
+    }   
+};
+@mixin max-xl(){
+    @media only screen and (max-width: $max-xl){
+        @content;
+    }
+};  
+@mixin max-xxl(){
+    @media only screen and (max-width: $max-xxl){
+        @content;
+    }
+};  
+@mixin max-hg(){
+    @media only screen and (max-width: $max-hg){
+        @content;
+    }
+};
+
+
+/*
+=========================================
+MIN RESOLUTION RESPONSIVE MIXINS
+=========================================
+*/
+@mixin min-xs(){
+    @media only screen and (min-width: $min-xs){
+        @content;
+    } 
+};
+@mixin min-sm(){
+    @media only screen and (min-width: $min-sm){
+        @content;
+    } 
+};
+@mixin min-md(){
+    @media only screen and (min-width: $min-md){
+        @content;
+    }   
+};
+@mixin min-lg(){
+    @media only screen and (min-width: $min-lg){
+        @content;
+    } 
+};
+@mixin min-xl(){
+    @media only screen and (min-width: $min-xl){
+        @content;
+    }
+}
+@mixin min-xxl(){
+    @media only screen and (min-width: $min-xxl){
+        @content;
+    }
+}
+@mixin min-hg(){
+    @media only screen and (min-width: $min-hg){
+        @content;
+    }
+}

@@ -1,0 +1,103 @@
+@include body{
+
+    .section--explore{
+
+        margin-bottom: 100px;
+        .col--image{
+            img{
+                width: 100%;
+                height: auto;
+                max-height: 605px;
+                object-fit: cover;
+
+                @include max-md{
+                    width: 100%;
+                    aspect-ratio: 1 / 1.25;
+                    max-height: max-content;
+                }
+
+            }
+        }
+        .col--content{
+            .col__wrap{
+                padding: 130px 0 260px;
+                text-align: center;
+                background: var(--color-primary);
+                margin-top: -1px;
+                @include max-md{
+                    padding: 60px 25px 280px;
+                }
+
+                h2{
+                    @include max-md{
+                        max-width: 380px;
+                        margin: 0 auto 25px;
+                    }
+                }
+
+                .btn{
+                    min-width: 300px;
+                }
+            }
+
+        }
+
+        .col--gallery{
+            margin-top: -185px;
+            @include max-md{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .container{
+                display: flex;
+                gap: 0 35px;
+
+                @include max-md{
+                    flex-direction: column;
+                }
+
+                figure{
+                    margin: 0;
+                    height: auto;
+                    position: relative;
+                    width: 100%;
+                    @include max-md{
+                        margin-bottom: 22px;
+                    }
+                
+                    img{
+                        aspect-ratio: 1 / 1.22;
+                        object-fit: cover;
+                    }
+
+                    figcaption{
+                        position: absolute;
+                        z-index: 2;
+                        color: color('black');
+                        font-family: font('secondary');
+                        bottom: 35px;
+                        left: -21px;
+                        padding: 15px 24px;
+                        background: color('accent');
+                        line-height: 1;
+                        text-transform: uppercase;
+                        letter-spacing: 1.7px;
+                        @include max-xl{
+                            font-size: 12px;
+                        }
+                        @include max-md{
+                            font-size: 14px;
+                            left: -10px;
+                            bottom: 20px;
+                            padding: 15px 30px;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+
+}

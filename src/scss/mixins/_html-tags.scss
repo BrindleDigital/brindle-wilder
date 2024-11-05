@@ -1,0 +1,36 @@
+@mixin all-content-tags(){
+  h1, h2, h3, h4, h5, h6,
+  p, span, label, li, div{
+    @content;
+  }
+}
+
+@mixin content-tags(){
+  p, span, label, li, div{
+    @content;
+  }
+}
+
+@mixin title-tags(){
+  h1, h2, h3, h4, h5, h6{
+    @content;
+  }
+}
+
+@mixin primary-title-tags(){
+  h1, h2, h3{
+    @content;
+  }
+}
+
+@mixin secondary-title-tags(){
+  h4, h5, h6{
+    @content;
+  }
+}
+
+@mixin list-tags(){
+  ul, ol{
+    @content;
+  }
+}

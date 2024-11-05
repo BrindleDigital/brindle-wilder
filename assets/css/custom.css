@@ -1,0 +1,10 @@
+body .section--explore .col--gallery .container figure img{
+  width: 100%;
+}
+
+:is(.regular-content__background--video, .regular-content__background--image) :is(iframe){
+  width: 177.7%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

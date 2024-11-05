@@ -1,0 +1,182 @@
+.site-menu{
+
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 999;
+    background: var(--color-secondary);
+
+    left: 101%;
+    transition: all .7s .0s ease;
+
+    &.active{
+        left: 0%;
+    }
+
+    .close-menu{
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        @include max-lg{
+            top: 25px;
+            right: 25px;
+        }
+    }
+
+    .site-menu__wrap,
+    .site-menu__main,
+    .menu-navigation{
+        height: 100%;
+    }
+
+    .site-menu__background{
+        position: absolute;
+        width: 33%;
+        left: auto;
+        right: 0;
+        top: 0;
+        height: 100%;
+        .site-menu__background--image,
+        .site-menu__background--overlay,
+        .site-menu__background--color{
+            @include absolute-background;
+        }
+        .site-menu__background--overlay{
+            background: var(--color-secondary);
+            opacity: 0.9;
+        }
+        @include max-lg{
+            width: 100%;
+            height: 30%;
+            top: 75%;
+        }
+    }
+    
+
+    .site-menu__wrap{
+        .menu-navigation{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33%;
+            margin: 0 auto;
+
+            @include max-lg{
+                padding-bottom: 30vh;
+            }
+
+            ul{
+
+                @include list;
+
+                gap: 60px;
+                
+                li{
+                    a{
+                        font-size: 36px;
+                        text-decoration: none;
+                        font-family: var(--font-secondary);
+                        letter-spacing: 1.7px;
+                        line-height: 1.1;
+                        color: var(--color-white);
+                        text-transform: uppercase;
+
+                        position: relative;
+
+                        &::before{
+                            content: "";
+                            width: 100%;
+                            height: 2px;
+                            top: calc(100% + 8px);
+                            background: var(--color-white);
+                            transform: scaleX(0);
+
+                            position: absolute;
+                            transition: all .4s .0s ease;
+                        }
+                        &:hover{
+                            
+                            &::before{
+                                transform: scaleX(1);
+                            }
+                        }
+                        
+                    }
+                }
+                @include max-xl{
+                    gap: 34px;
+                    li{
+                        a{
+                            font-size: 22px;
+                        }
+                    }
+                }
+                @include max-lg{
+                    gap: 34px;
+                    li{
+                        text-align: center;
+                        margin: 0 !important;
+                        width: 100%;
+                        a{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar{
+
+            @include list;
+
+            position: absolute;
+            width: 33%;
+            right: 0;
+            top: 0;
+            height: 100%;
+        
+            justify-content: center;
+            padding-left: 160px;
+            gap: 40px;
+
+            @include max-xl{
+                padding-left: 80px;
+                gap: 20px;
+            }
+
+            @include max-lg{
+                width: 100%;
+                top: 70%;
+                height: 30%;
+                padding: 0 20px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+            }
+
+            li{
+                a{
+                    font-size: 16px;
+                    line-height: 1.1;
+                    text-decoration: none;
+                    color: var(--color-white);
+                    letter-spacing: 1.7px;
+                    font-family: var(--font-secondary);
+                    text-transform: uppercase;
+                    @include max-xl{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,315 @@
+@include hbody {
+
+  .site-footer {
+    
+    .regular-content__wrap{
+      padding: 175px 0 90px;
+      @include max-md{
+        padding: 80px 20px 75px;
+      }
+    }
+
+
+    ul{
+      li{
+
+        a{
+          text-decoration: none;
+          color: var(--color-white);
+          &:hover{
+            text-decoration: underline;
+          } 
+        }
+
+        &.underline{
+          a{
+            text-decoration: underline;
+            &:hover{
+              text-decoration: none;
+            }
+          }
+        }
+
+      }
+    }
+
+    
+    .col--navigation{
+
+      .footer-navigation{
+        max-width: calc(1388px + (20px* 2));
+        display: flex;
+        padding: 0 20px;
+        margin: 0 auto;
+        @include max-md{
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      
+
+      .footer-menu--first,
+      .footer-menu--second{
+        li{
+          display: none;
+        }
+      }
+
+
+      .footer-menu--first :is( li:nth-child(1), li:nth-child(2), li:nth-child(3) ,li:nth-child(4) ),
+      .footer-menu--second :is( li:nth-child(5), li:nth-child(6), li:nth-child(7), li:nth-child(8)){
+        display: block;
+
+      }
+      
+      .menu-footer-menu-container{
+        @include min-md{
+          width: 50%;
+        }
+      }
+
+      .navigation-group{
+
+        display: flex;
+        flex-direction: column;
+
+        @include max-md{
+          width: 100% !important;
+        }
+
+        h2{
+          margin: 0 0 40px;
+          width: 100%;
+          @include max-xl{
+            font-size: 16px;
+            margin: 0 0 24px;
+          }
+          @include max-md{
+            text-align: center;
+            width: 100%;
+            margin: 0 0 20px;
+          }
+        }
+
+        &.item{
+          ul{
+            @include list;
+          }
+          @include max-md{
+            &:first-of-type{
+              margin-bottom: 80px
+            }
+          }
+        }
+
+        &.socials{
+          ul{
+            @include list-inline;
+
+
+            li{
+
+              a{
+                position: relative;
+                display: inline-flex;
+                padding: 0;
+                height: 42px;
+                width: 42px;
+                background: var(--color-accent);
+                color: var(--color-secondary);
+                border-radius: 100%;
+                line-height: 1.1;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                padding-left: 1px;
+                text-decoration: none;
+                i{
+                  transition: all .5s .0s ease;
+                  filter: brightness(1.0);
+
+                }
+                &:hover{
+                  i{
+                    transform: scale(1.2);
+                    filter: brightness(1.2);
+                  }
+                }
+              }
+
+              @include max-xl{
+                &:not(:last-of-type){
+                  margin-right: 10px;
+                  
+                }
+                a{
+                  img{
+                    max-width: 32px;
+                  }
+
+                  
+
+
+                }
+              }
+
+              @include max-md{
+                width: auto !important;
+                &:not(:last-of-type){
+                  margin-right: 7px !important;
+                  
+                }
+                a{
+                  img{
+                    max-width: 28px;
+                  }
+                }
+              }
+
+            }
+          }
+        }
+
+        div{
+          display: flex;
+          @include max-md{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
+        }
+
+        ul{
+          width: 100%;
+          li{
+            margin: 0 0 24px;
+            @include max-md{
+              text-align: center;
+              width: 100%;
+              margin: 0 0 18px !important;
+            }
+            a{
+              font-size: 18px;
+              
+            }
+          }
+          @include max-xl{
+            justify-content: center !important;
+            li{
+              margin: 0 0 18px;
+              a{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        &.item--1{
+          width: 50%;
+        }
+        &.item--2{
+          width: 30%;
+          ul{
+            li{
+              margin: 0 0 11px;
+            }
+          }
+        }
+        &.socials{
+          width: 20%;
+          padding-top: 74px;
+        }
+
+      }
+
+      
+
+    }
+
+    .col--bottom{
+      margin-top: 100px;
+
+
+      @include max-xl{
+        margin-top: 70px;
+      }
+
+      p{
+        margin: 0 !important;
+        text-align: center;
+        @include max-md{
+          font-size: 10px;
+        }
+      }
+
+      .col__wrap{
+        display: flex;
+        align-items: center;
+        padding: 0 65px;
+        @include max-xl{
+          padding: 0 20px; 
+        }
+        @include max-md{
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .copyright{
+        @include max-md{
+          margin-bottom: 20px;
+        }
+      }
+
+      ul{
+        @include list-inline;
+        margin-left: 35px;
+        
+        @include max-md{
+          margin: 0 35px 0 0;
+          li{
+            a{
+              img{
+                max-width: 18px;
+              }
+            }
+          }
+        }
+        
+      }
+
+      small{
+        @include max-xl{
+          font-size: 12px;
+        }
+        @include max-md{
+          width: 100%;
+          text-align: center;
+          margin: 0 auto 25px;
+          // max-width: 250px;
+          font-size: 10.5px;
+        }
+      }
+
+      a{
+        text-decoration: none;
+        color:  color('white');
+      }
+
+      a.logo{
+        display: inline-block;
+        margin-left: auto;
+        @include max-md{
+          margin: 0;
+          img{
+            max-width: 70px;
+          }
+        }
+      }
+
+    }
+    
+  }
+
+}

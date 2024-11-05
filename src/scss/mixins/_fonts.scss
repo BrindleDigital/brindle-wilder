@@ -1,0 +1,22 @@
+/*
+=========================================
+SITE FONTS
+=========================================
+*/
+$fallback_fonts: 'sans-serif';
+$fonts: (
+    "primary": var(--font-primary),
+    "secondary": var(--font-secondary),
+    "alt": var(--font-alt),
+);
+
+
+
+/*
+=========================================
+GET FONT FUNCTION
+=========================================
+*/
+@function font($font) {
+    @return map-get($fonts, $font)#{', sans-serif'};
+}

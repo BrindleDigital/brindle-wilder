@@ -1,0 +1,23 @@
+/*
+=========================================
+SITE COLORS
+=========================================
+*/
+$colors: (
+    "primary": var(--color-primary),
+    "secondary": var(--color-secondary),
+    "accent": var(--color-accent),
+    "black": var(--color-black),
+    "white": var(--color-white)
+);
+
+
+  
+/*
+=========================================
+GET COLOR FUNCTION
+=========================================
+*/
+@function color($color) {
+    @return map-get($colors, $color);
+}

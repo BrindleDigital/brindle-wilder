@@ -1,0 +1,36 @@
+[06-Aug-2024 15:06:22 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php on line 15
+[06-Aug-2024 15:08:14 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php on line 15
+[06-Aug-2024 15:08:26 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php on line 15
+[06-Aug-2024 15:17:50 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php on line 15
+[06-Aug-2024 15:26:30 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php on line 15
+[06-Aug-2024 15:31:19 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php on line 15
+[06-Aug-2024 15:32:16 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php on line 15
+[06-Aug-2024 15:33:23 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php on line 15
+[06-Aug-2024 15:33:41 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home5/tka333/codesunrise.co/wilder/wp-content/themes/brindle/index.php on line 15

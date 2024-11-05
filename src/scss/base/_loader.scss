@@ -1,0 +1,28 @@
+@include body{
+    
+    .site-loader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 9999;
+        background: #eeeeee;
+        inset: 0;
+        width: 100% !important;
+        transform: scale(1) !important;
+        height: 100% !important;
+        transform: scale(1) !important;
+        // transition: opacity 0.5s 0.1s ease, visibility 0s 0.6s ease;
+        img {
+            position: relative;
+            width: 100%;
+            max-width: 65px;
+            display: block;
+        }
+        &.hide{
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+}

@@ -1,0 +1,86 @@
+@include body{
+
+    .section--testimonials{
+        padding: 150px 0;
+
+        @include max-lg{
+            padding: 60px 20px 70px;
+        }
+
+        .testimonials-slider{
+            .item__wrap{
+                padding-bottom: 120px;
+
+                @include max-lg{
+                    padding-bottom: 60px;
+                }
+
+                h4, h2{
+                    text-align: center;
+                }
+    
+                .content{
+                    text-align: center;
+                    font-size: 24px;
+                    line-height: 44px;
+                    font-style: italic;
+                    max-width: 850px;
+                    margin: 0 auto 50px;
+    
+                    p{
+                        margin: 0;
+                    }
+
+                    @include max-xl{
+                        font-size: 18px;
+                        max-width: 620px;
+                    }
+    
+                }
+    
+                .link{
+                    font-size: 16px;
+                    font-family: font(secondary);
+                    line-height: 1;
+                    letter-spacing: 1.7px;
+                    text-align: center;
+                    display: block;
+                }
+    
+            }
+    
+            .slick-dots{
+                align-items: center;
+                @include max-lg{
+                    width: 100%;
+                    padding: 0 20px;
+                }
+                li{
+                    margin: 0;
+                    opacity: 1 !important;
+                    button{
+                        opacity: 1 !important;
+                        width: 195px;
+                        border-radius: 0;
+                        height: 1px;
+                        background: #000;
+                    }
+                    &.slick-active{
+                        button{
+                            height: 5px;
+                        }
+                    }
+                    @include max-lg{
+                        width: 100%;
+                        button{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+    
+        }
+
+    }
+
+}

@@ -1,0 +1,59 @@
+@include body{
+
+    .section--contact-us{
+        padding: 125px 0 90px;
+
+        @include max-lg{
+            padding: 60px 20px;
+        }
+
+        .container{
+            position: relative;
+            &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 375px;
+                aspect-ratio: 1 / 2;
+                bottom: -90px;
+                left: 25%;
+                transform: translateX(-40%);
+                background: url(/wp-content/themes/brindle/assets/img/contact-us-figure.svg);
+                background-size: contain;
+                background-position: center bottom;
+                background-repeat: no-repeat;
+                z-index: -1;
+                @include max-lg{
+                    display: none !important;
+                }
+            }
+        }
+
+        .col--content{
+
+            p:not(.subheading){
+                max-width: 500px;
+                margin-bottom: 50px;
+            }
+
+            a{
+                color: var(--color-black);
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+        }
+
+        .col--form{
+            .col__wrap{
+                padding: 48px 64px;
+                @include max-md{
+                    padding: 40px 25px;
+                }
+            }
+        }
+    }
+    
+}

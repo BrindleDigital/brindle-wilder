@@ -1,0 +1,50 @@
+@include body{
+
+    .section--cta{
+        .regular-content__wrap{
+            padding: 125px 0;
+            @include max-lg{
+                padding: 45px 20px;
+            }
+        }
+        .col__wrap{
+            background: var(--color-accent);
+            padding: 185px 0 185px;
+            position: relative;
+            @include max-xl{
+                padding: 160px 0;
+            }
+            @include max-lg{
+                padding: 40px 20px;
+            }
+            .content{
+                max-width: 875px;
+                margin: 0 auto;
+                p{
+                    max-width: 715px;
+                    margin: 0 auto;
+                }
+                .btn{
+                    margin-top: 35px;
+                }
+            }
+            .floating{
+                position: absolute;
+                right: 75px;
+                left: auto;
+                bottom: 0;
+                transform: translateY(40%);
+                @include max-lg{
+                    max-width: 27px;
+                    right: 20px;
+                }
+            }
+            .btn{
+                @include min-md{
+                    min-width: 275px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'sa-woodland-hills';
+    src: url('SAWoodlandHillsRegular.eot');
+    src: url('SAWoodlandHillsRegular.eot?#iefix') format('embedded-opentype'),
+        url('SAWoodlandHillsRegular.woff2') format('woff2'),
+        url('SAWoodlandHillsRegular.woff') format('woff'),
+        url('SAWoodlandHillsRegular.ttf') format('truetype'),
+        url('SAWoodlandHillsRegular.svg#SAWoodlandHillsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

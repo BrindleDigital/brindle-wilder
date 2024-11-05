@@ -1,0 +1,104 @@
+@include body{
+
+    .section--gallery-list{
+        .col--title{
+            overflow: hidden;
+            h2{
+                background: var(--color-accent);
+                padding: 71px 120px;
+                line-height: 1;
+                width: 200%;
+                @include max-md{
+                    width: 100%;
+                    padding: 60px 25px;
+                    text-align: center;
+                }
+            }
+        }
+        .col--content{
+            padding: 65px 120px;
+            display: flex;
+            @include max-xl{
+                padding: 65px 60px;
+            }
+            @include max-lg{
+                flex-direction: column;
+                
+            }
+            @include max-md{
+                padding: 60px 25px;
+            }
+            ul{
+                @include list;
+                width: 50%;
+                @include max-md{
+                    width: 100%;
+                }
+                li{
+                    width: 100%;
+                    margin: 0;
+                    a{
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        color: var(--color-black);
+                        text-decoration: none;
+                        border-bottom: 4px solid transparent;
+                        display: inline-block;
+                        padding: 20px 0;
+                        width: 100%;
+                        max-width: 545px;
+                        position: relative;
+                        &::before{
+                            content: "";
+                            max-width: 545px;
+                            top: 100%;
+                            border-bottom: 4px solid #F0EFEA;
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            width: 100%;
+                            @include max-md{
+                                max-width: none;
+                            }
+                        }
+                        @include max-hg{
+                            max-width: 400px;
+                            font-size: 16px;
+                        }
+                    }
+                    &.image{
+                        a{
+                            &::after{
+                                content: "";
+                                background: url(/wp-content/themes/brindle/assets/img/amenities/icon-camera.svg);
+                                display: inline-block;
+                                width: 20px;
+                                height: 20px;
+                                position: relative;
+                                top: 5px;
+                                margin-left: 5px;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                }
+                &:last-of-type{
+                    li{
+                        a{
+                            &::before{
+                                left: 50px;
+                                @include max-md{
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    
+}

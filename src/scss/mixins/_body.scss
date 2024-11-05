@@ -1,0 +1,17 @@
+@mixin hbody( $additional-selector: '' ){
+  html body#{$additional-selector}{
+    @content;
+  }
+} 
+
+@mixin html( $additional-selector: '' ){
+  html#{$additional-selector}{
+    @content;
+  }
+} 
+
+@mixin body( $additional-selector: '' ){
+  body#{$additional-selector}{
+    @content;
+  }
+} 
