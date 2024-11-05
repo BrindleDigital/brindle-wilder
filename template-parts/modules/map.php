@@ -30,7 +30,7 @@
     
        (function(){
 
-            let defaultMarkerUrl = window.siteUrl + "/wp-content/themes/brindle/assets/img/maps_marker.png";
+            let defaultMarkerUrl = window.siteUrl + "/wp-content/themes/brindle-wilder/assets/img/maps_marker.png";
             let markerUrl = '<?php echo $section['marker_icon']['url']; ?>';
 
             window.gmapsettings = {}
