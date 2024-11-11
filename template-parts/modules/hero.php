@@ -51,7 +51,7 @@
         <?php endforeach; ?>
 
     </div>
-
+    <?php if(count($section)>1){?>
     <div class="reguar-content__slider--arrows">
 
         <button class="js--hero-slider-prev slider-prev">
@@ -67,5 +67,6 @@
         </button>
 
     </div>
+    <?php }?>
 
 </section>

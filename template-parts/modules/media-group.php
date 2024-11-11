@@ -1,5 +1,10 @@
 <?php   
     $section = $args['section'];
+    $totalItems = count($section['options']);
+    $halfItem = ceil($totalItems / 2);
+    if($halfItem<=5){
+        $halfItem =5;
+    }
 ?>
 
 
@@ -21,7 +26,7 @@
 
                         <ul>
                             <?php foreach( $section['options'] as $index => $item ): ?>
-                                <?php if( $index < 5): 
+                                <?php if( $index < $halfItem): 
                                     
                                     $image = $item['image']['url'];
                                     
@@ -36,7 +41,7 @@
 
                         <ul>
                             <?php foreach( $section['options'] as $index => $item ): ?>
-                                <?php if( $index >= 5): 
+                                <?php if( $index >= $halfItem): 
                                     
                                     $image = $item['image']['url'];
                                     
