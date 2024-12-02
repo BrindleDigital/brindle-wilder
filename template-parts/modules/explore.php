@@ -10,7 +10,7 @@
             <div class="container-fluid">
                 <div class="row">
 
-                    <div class="col col-12 col--image p-0">
+                    <div class="col col-12 col--image p-0 explore-parallex"  style="background-image: url(<?php echo $section['image']['url']; ?>)">
                         <img src="<?php echo $section['image']['url']; ?>" alt="<?php echo $section['image']['alt']; ?>">
                     </div>
 
