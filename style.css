@@ -2,7 +2,7 @@
 Theme Name: Brindle Theme
 Theme URI: http://codesunrise.co/
 Author: Code Sunrise
-Version: 3.5.1
+Version: 3.5.2
 GitHub Theme URI: BrindleDigital/brindle-wilder
 
 */
@@ -951,52 +951,4 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
-}
-/*Edits Nov 28*/
-body .section--testimonials .testimonials-slider .item__wrap .content {
-	max-width:660px;
-}
-body .section--cta .col__wrap .content {
-	max-width: 700px;
-}
-body .section--gallery-list .col--content ul:last-of-type li a::before {
-    left: 0px;
-}
-.site-header .col--main .phone a {
-	font-size:18px !important;
-}
-/*Fixed header to 100*/
-.site-header.fixed .container-fluid{
-	padding: 25.5px 50px 12.5px;
-}
-.site-header.fixed .col--main {
-    min-height: 62px;
-}
-.site-header.fixed .col--main .logo {
-	min-height: 55px;
-    max-height: 55px;
-}
-.site-header.fixed .btn {
-	padding: 18px 18px;
-	height: initial;
-}
-/*Footer*/
-html body .site-footer .col--navigation .footer-navigation {
-    max-width: 1628px;
-}
-
-html body .site-footer .col--navigation .navigation-group.item--1,html body .site-footer .col--navigation .navigation-group.item--2 {
-    width: 45%;
-}
-html body .site-footer .col--navigation .navigation-group.socials {
-    width: 10%;
-}
-.explore-parallex {
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center center;
-background-attachment: fixed;
-}
-.explore-parallex img{
-opacity: 0;
 }
