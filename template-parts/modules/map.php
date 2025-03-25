@@ -37,6 +37,7 @@
 
             window.gmapsettings.latitude = <?php echo $section['latitude']; ?>;
             window.gmapsettings.longitude = <?php echo $section['longitude']; ?>;
+            window.gmapsettings.zoom = <?php echo $section['zoom']; ?>;
             window.gmapsettings.marker = ( markerUrl ) ? markerUrl : defaultMarkerUrl;
             
             <?php if( !empty($section['styles']) ): ?>

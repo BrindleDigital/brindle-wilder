@@ -3212,7 +3212,7 @@ window.$ = window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
                 };
                 map = new Map(document.getElementById("map"), {
                   center: latLng,
-                  zoom: 8
+                  zoom: window.gmapsettings.zoom
                 });
                 map.setOptions({
                   styles: styles
