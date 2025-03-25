@@ -252,7 +252,7 @@ import 'lity';
             
             map = new Map(document.getElementById("map"), {
                 center: latLng,
-                zoom: 8,
+                zoom: window.gmapsettings.zoom,
             });
 
             map.setOptions({ styles: styles });

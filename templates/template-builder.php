@@ -108,6 +108,12 @@ get_header();
                 get_template_part('template-parts/modules/map', '', array('section' => $section['content']['map'])  );
 
                 break;
+
+            case 'accordions':
+
+                get_template_part('template-parts/modules/accordions', '', array('section' => $section['content']['accordions'])  );
+
+                break;
     
 
         endswitch;

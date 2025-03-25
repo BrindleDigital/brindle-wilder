@@ -124,7 +124,11 @@
 							<div class="col__wrap">
 
 								<div class="copyright">
-									<?php echo $section['bottom_content']; ?>
+									<?php 
+									$bottom_content = $section['bottom_content'];
+									$bottom_content = str_replace('{{current_year}}',date('Y'),$bottom_content);
+									echo $bottom_content;
+									?>
 								</div>
 
 								<ul>
@@ -136,9 +140,20 @@
 												?>
 												
 													<li>
+														<?php 
+														$alt='';
+														if(isset($icon['link']['url'])){
+															$alt=$icon['link']['title'];
+														?>
 														<a href="<?php echo $icon['link']['url']; ?>" target="<?php echo $icon['link']['target']; ?>">
-															<img src="<?php echo $icon['icon']['url']; ?>" alt="<?php echo $icon['link']['title']; ?>">
+														<?php }?>
+															<img src="<?php echo $icon['icon']['url']; ?>" 
+															alt="<?php echo $alt; ?>"  >
+														<?php 
+														if(isset($icon['link']['url'])){
+														?>
 														</a>
+														<?php }?>
 													</li>
 
 												<?php

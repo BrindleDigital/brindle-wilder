@@ -55,13 +55,22 @@ function regular_content_background( $background = false, $settings = [] ){
 
     // print_r($video_type);
     // print_r($video_embed_url);
+    $specialiframe = '';
+    if($_SERVER['SERVER_NAME'] =='wyeflats.com'){
+
+            $specialiframe = '<iframe class="desktop-video" width="420" height="345" class="js--background-video-iframe loaded" src="//www.youtube.com/embed/fYAu_Ozzem8?version=3&controls=0&loop=1&playlist=fYAu_Ozzem8&autoplay=1&mute=1&rel=0&modestbranding=1" frameborder="0" allowfullscreen=""></iframe>';
+    }
 
     if( $video_enabled ):
     $content .= '<div class="regular-content__background--item regular-content__background--video">';
 
+        
+
         if( ( $video_type == '1' ) && ( !empty($video_media_file) ) ):
 
-            $content .= '<video autoplay loop mute><source src="'.$video_media_file['url'].'"></video>';
+            $content .= '<video class="mobile-video" autoplay loop mute><source src="'.$video_media_file['url'].'"></video>'.$specialiframe;
+
+            
 
         elseif( ($video_type == '2' || $video_type == '3') && ( !empty($video_embed_url) ) ):
 
